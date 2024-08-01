@@ -8,7 +8,7 @@ Explore the dynamic world of cryptocurrency with our tracking platform. From rea
 
 
 ## Overview 🌟
-Welcome to the best website for tracking cryptocurrency! Our platform offers real-time price updates, in-depth market analysis, and tools to help you make informed decisions in the fast-paced world of digital assets.
+Welcome to the website for tracking cryptocurrency! Our platform offers real-time price updates, in-depth market analysis, and tools to help you make informed decisions in the fast-paced world of digital assets.
 
 ## Features ✨
 - **Real-Time Price Updates:** Stay informed with the latest prices for over 10,000 cryptocurrencies.

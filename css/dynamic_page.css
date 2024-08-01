@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*
+font-family: 'Roboto Slab', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+body{
+    background-color: #e0dbff;
+    position: relative;
+}
+.imgBg{
+    width: 100%;
+    background-color: #151328;
+}
+
+#dynamic-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.dynamic_img{
+    padding: 3rem 10rem;
+    width: 100%;
+    max-height: 35rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+.width{
+    margin: 0 auto;
+    padding: 0rem 25rem;
+    display: flex;
+    flex-direction: column;
+}
+.dynamic_heading{
+    margin: 3rem 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    color: #151328;
+}
+.dynamic_paragraph{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    color: #2e2b46;
+}
+.dynamic_paragraph:last-child{
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1280px) {
+    :root{
+        font-size: 14px;
+    }
+    .width{
+        margin: 1rem auto;
+        padding: 0rem 15rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1124px) {
+    #dynamic-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .width{
+        padding: 0rem 10rem;
+    }
+    .dynamic_img{
+        padding: 3rem 5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    :root{
+        font-size: 12px;
+    }
+    .dynamic_paragraph{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    :root{
+        font-size: 11px;
+    }
+    
+}
+@media screen and (max-width: 520px) {
+    :root{
+        font-size: 11px;
+    }
+    .dynamic_heading{
+        margin: 2rem 0rem;
+        font-family: 'Roboto Slab', serif;
+        font-size: 3rem;
+        line-height: 3.4rem;
+        text-wrap: balance;
+        color: #151328;
+    }
+    #dynamic-container{
+        width: 100%;
+    }
+    
+    .width{
+        padding: 0rem 2.5rem;
+    }
+    
+}
+@media screen and (max-width: 460px) {
+    :root{
+        font-size: 11px;
+    }
+    .dynamic_heading{
+        margin: 2rem 0rem;
+        font-family: 'Roboto Slab', serif;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-wrap: balance;
+        color: #151328;
+    }
+    .dynamic_img{
+        padding: 3rem 3rem;
+    }
+}
+@media screen and (max-width: 325px) {
+    :root{
+        font-size: 10px;
+    }
+}

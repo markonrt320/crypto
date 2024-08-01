@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+body{
+    background-color: #151328;
+}
+.hero{
+    padding: 10rem 14rem;
+    background-color: #151328;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rows{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.heading1{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: 5px;
+}
+.heading2{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 5px;
+}
+.paragraph{
+    font-family: 'Raleway', sans-serif;
+    color: #b398e5;
+    font-size: 1rem;
+    line-height: 1.5rem; /* 24px */
+    letter-spacing: 0.8px;
+}
+
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+    gap:4rem;
+    align-items: center;
+}
+.hero-link{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+.hero-link:hover{
+    text-decoration: underline;
+}
+.hero-button{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    padding: 0.8rem 3rem;
+    border-radius: 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(104, 44, 227, 0.77);
+    transition: background-color 0.3s;
+}
+.hero-button:hover{
+    background-color: rgba(161, 125, 211, 0.786);
+}
+.right{
+    display: flex;
+    justify-content: center;
+}
+
+.second-div{
+    padding: 6rem 15.625rem;
+    background-color: #18192D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url('../imgs/second-div-img.png');
+}
+.second-div-img{
+    width: 23.375rem;
+    height: auto;
+    margin: 0 auto;
+}
+.blue-p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #2479ED;
+}
+.third-div{
+    padding: 4rem 5rem;
+    background-color: #151328;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.left-third{
+    text-align: end;
+}
+.right-third {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+    gap: 1rem; /* Prilagodite vrednost gap prema potrebi */
+}
+  
+  .right-third img {
+    width: auto;
+    height: 3rem;
+}
+.div-four{
+    padding: 2rem 15.625rem 6rem 15.625rem;
+    display: flex;
+    flex-direction: column;
+    background: #18192D;
+    gap: 4rem;
+}
+.heading4{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 1.5rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem; /* Adjust the gap according to your preference */
+  }
+  
+  .card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+    border: 1px solid #fff; /* Optional: Add a border for better visibility */
+    border-radius: 1rem;
+  }
+  .naslov{
+    color: #8675A9;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.8px;
+  }
+  .name{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+  }
+  
+  .profile {
+    width: 90%;
+    max-width: 12rem; /* Adjust the max-width of the profile images */
+    height: auto;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .podnaslov{
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; /* 55.6px */
+    letter-spacing: 5px;
+  }
+  .paragraf{
+    color: #a69ac0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  .leva{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .desna{
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .part{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .letters{
+    color: rgba(171, 122, 239, 0.71);
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .bottom{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 27px */
+    letter-spacing: 0.9px;
+  }
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 4rem 0;
+    background: #151328;
+    white-space: nowrap;
+    position: relative;
+  }
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  .logos-slide img {
+    height: 7rem;
+    margin: 0rem 5rem;
+  }
+
+
+@media screen and (max-width: 1440px) {
+    .hero{
+        padding: 4rem 10rem;
+    }
+    .second-div{
+        padding: 4rem 10rem;
+    }
+    .hero-button{
+        padding: 0.6rem 2rem;
+    }
+}
+@media screen and (max-width: 1280px) {
+    
+}
+@media screen and (max-width: 1124px) {
+    .hero{
+        padding: 4rem 8rem;
+    }
+    .second-div{
+        padding: 4rem 8rem;
+    }
+    .left-third{
+        width: 40%;
+        text-align: end;
+    }
+    .right-third {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+        gap: 1rem; /* Prilagodite vrednost gap prema potrebi */
+    }
+    .rows{
+        gap: 1.5rem;
+    }
+    .heading1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .heading2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .paragraph{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    .blue-p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .hero-buttons{
+        gap:1.5rem;
+    }
+    .hero-link{
+        font-size: 0.9rem;
+    }
+    .hero-button{
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
+        border-radius: 0rem 1rem;
+        display: flex;
+    }
+    .div-four{
+        padding: 6rem 10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .naslov{
+        text-align: center;
+        font-size: 1.4rem;
+      }
+}
+@media screen and (max-width: 900px) {
+    .hero{
+        padding: 4rem 5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3.5rem;
+    }
+    .second-div{
+        padding: 5rem 5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .second-div .heading1{
+        
+        text-align: center;
+    }
+    .second-div .blue-p{
+        text-align: justify;
+    }
+    .rows{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .heading1{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    .heading2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
+    .paragraph{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .hero-buttons{
+        gap:2rem;
+    }
+    .hero-link{
+        font-size: 1.3rem;
+    }
+    .hero-button{
+        padding: 0.6rem 3rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.3rem;
+        border-radius: 0rem 1rem;
+    }
+    .div-four{
+        padding: 3rem 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+    .div-four{
+        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem; /* Adjust the gap according to your preference */
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+    }
+    .row{
+        width: 100%;
+    }
+    .part{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+    .heading4{
+        font-size: 2rem;
+    }
+    .paragraf{
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+    .bottom{
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: 0.9px;
+      }
+}
+@media screen and (max-width: 640px) {
+    .hero{
+        padding: 4rem 3.5rem;
+    }
+    .second-div{
+        background-repeat: no-repeat;
+        background-color: #16172E;
+    }
+    .heading2{
+        font-size: 3.5rem;
+        line-height: 4rem;
+        text-align: center;
+    }
+    .left-third{
+        width: 80%;
+    }
+    .right-third {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+        align-items: center;
+        gap: 2rem;
+    }
+    .right-third img {
+        margin: 0 auto;
+        width: auto;
+        height: 5rem;
+    }
+    .third-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .third-row{
+        margin: 0 auto;
+    }
+    .naslov{
+        text-align: center;
+        font-size: 1.7rem;
+      }
+    
+}
+@media screen and (max-width: 425px) {
+    .hero{
+        gap: 5rem;
+    }
+    .second-div{
+        padding: 5rem 3rem;
+        gap: 3.5rem;
+        background-repeat: no-repeat;
+        background-color: #16172E;
+    }
+    .rows{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .heading1{
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+    .paragraph{
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    .hero-buttons{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        text-align: center;
+    }
+    .hero-link{
+        font-size: 1.6rem;
+    }
+    .heading2{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .hero-button{
+        padding: 0.8rem 1.8rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.6rem;
+        border-radius: 0rem 1rem;
+    }
+    .third-div{
+        padding: 6rem 2rem;
+    }
+    .div-four{
+        padding: 3rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem; /* Adjust the gap according to your preference */
+    }
+    .card{
+        margin: 0 auto;
+        align-items: center;
+        width: 80%;
+        padding: 2rem;
+        gap: 2rem; /* Optional: Add a border for better visibility */
+    }
+    .name{
+        font-size: 1.8rem;
+      }
+      
+    .profile {
+        width: 100%;
+        max-width: 15rem; /* Adjust the max-width of the profile images */
+        height: auto;
+    }
+    .heading4{
+        font-weight: 500;
+        margin-top: 3rem;
+        font-size: 2.5rem;
+    }
+    .podnaslov{
+        text-align: center;
+    }
+    .paragraf{
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        text-align: center;
+      }
+}
+@media screen and (max-width: 325px) {
+    .hero{
+        padding: 4rem 3rem;
+        background-color: #151328;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3.5rem;
+    }
+    .second-div{
+        padding: 4rem 3rem;
+        gap: 3.5rem;
+    }
+    .heading1{
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+    .hero-link{
+        font-size: 1.2rem;
+    }
+    .hero-button{
+        padding: 1rem 2rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.2rem;
+        border-radius: 0rem 1rem;
+    }
+    .cards {
+        display: grid;
+        
+        gap: 1rem; /* Adjust the gap according to your preference */
+    }
+}

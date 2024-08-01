@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font: 1.2rem 'Raleway', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*
+font-family: 'Roboto Slab', serif;
+font-family: 'Open Sans', sans-serif;*/
+body{
+    background-color: #232539;
+}
+#loading.display {
+    visibility: visible;
+    margin: 2rem auto;
+}
+#loading {
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid #9c41f2;
+    border-radius: 100%;
+    margin: 0rem auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#coin-container{
+    width: 50vw;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#chartContainer{
+    width: 50vw;
+    height: max-content;
+    margin: 0rem auto;
+}
+.green{
+    color: #02b452;
+}
+.red{
+    color: #ff3a33;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 3rem;
+}
+.topPart{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.currentValue{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+#percentage{
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+.topPartImg{
+    width: 2rem;
+    height: 2rem;
+}
+.coinHeading{
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.description, .description a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #18b1df;
+    text-decoration: none;
+}
+.bottomPart{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.bottomPart ul{
+    margin:1rem 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bottomPart ul li{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #19afef;
+    padding: 12px 0;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.bottomPart ul li p:first-child{
+    color: #c2c2c2;
+}
+.bottomPart ul li:first-child{
+    border-top: 1px solid #19afef;
+}
+.bottomPart ul li:hover{
+    background-color: #404361;
+}
+@media screen and (max-width: 1280px) {
+    #coin-container{
+        width: 70vw;
+    }
+    #chartContainer{
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+    }
+    canvas{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    :root{
+        font-size: 11px;
+    }
+    #coin-container{
+        width: 85vw;
+    }
+    #chartContainer{
+        width: 85vw;
+    }
+}

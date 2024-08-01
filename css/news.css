@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+/*
+font-family: 'Domine', serif;
+*/
+#loading.display {
+    visibility: visible;
+    margin: 2rem auto;
+}
+#loading {
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid #9c41f2;
+    border-radius: 100%;
+    margin: 2rem auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.container{
+    padding: 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #232539;
+    gap: 2rem;
+}
+.dataCategories{
+    background-color: #232539;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10rem);
+    gap: 1rem;
+}
+.grid {
+    background-color: #232539;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+}
+.categoryButton{
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #e7cdf8;
+    border: 2px solid #c39cff;
+    color: #7d22f4;
+    border-radius: 2px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+.categoryButton:hover {
+    background-color: #7d22f4;
+    color: #fff;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #151328;
+    padding: 1rem;
+    gap: 0.3rem;
+    border-radius: 4px;
+}
+  
+.header {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .header-img {
+    opacity: .7;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center center;
+    flex-shrink: 0;
+  }
+  .categoryTitle{
+    font-family: 'Domine', serif;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    overflow: hidden;
+    font-weight: 600;
+    color: #8949fe;
+  }
+  .title {
+    font-family: 'Domine', serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    overflow: hidden;
+    font-weight: 600;
+    color: #D3C1D2;
+}
+[data-resume]{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-align: justify;
+    width: 100%;
+    padding: 1rem 0;
+    color: #7880B5;
+}
+#dynamicLink{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    padding: 0.6rem 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(104, 44, 227, 0.77);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+#dynamicLink:hover{
+    background-color: rgba(147, 95, 251, 0.77);
+}
+
+@media screen and (max-width: 1280px) {
+    :root{
+        font-size: 14px;
+    }
+    .container{
+        padding: 5rem 6rem;
+    }
+}
+@media screen and (max-width: 1124px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}
+@media screen and (max-width: 900px) {
+    .grid {
+        text-align: center;
+    }
+    .container{
+        padding: 5rem 4rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    :root{
+        font-size: 12px;
+    }
+    .container{
+        padding: 5rem 3rem;
+    }
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    .dataCategories{
+        background-color: #232539;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 11rem);
+        gap: 1rem;
+    }
+    .categoryButton{
+        font-family: 'Domine', serif;
+        font-weight: 700;
+        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    :root{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 520px) {
+    :root{
+        font-size: 11px;
+    }
+    .container{
+        padding: 5rem 3rem;
+    }
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}
+@media screen and (max-width: 460px) {
+    :root{
+        font-size: 11px;
+    }
+    .container{
+        padding: 5rem 3rem;
+    }
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    .title {
+        font-family: 'Domine', serif;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        overflow: hidden;
+        font-weight: 600;
+        flex-grow: 1;
+        color: #D3C1D2;
+      }
+    [data-resume]{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-align: justify;
+        width: 100%;
+        padding: 1.5rem 1rem;
+        color: #7880B5;
+      }
+      
+#dynamicLink{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(104, 44, 227, 0.77);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.dataCategories{
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    align-items: center;
+}
+.categoryButton{
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 325px) {
+    :root{
+        font-size: 10px;
+    }
+}

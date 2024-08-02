@@ -15,13 +15,8 @@ Welcome to the website for tracking cryptocurrency! Our platform offers real-tim
 - **Portfolio Management:** Track top sorted cryptocurrencies at the moment.
 - **Mobile Access:** Monitor your portfolio on the go with our responsive design.
 
-## Our Mission 🎯
-Our mission is to empower individuals with the knowledge and tools needed to navigate the complexities of the cryptocurrency landscape. We aim to foster financial literacy, promote transparency, and inspire confidence in every investor's journey.
-
 ## Integration with CoinGecko API 📈
 Our platform leverages the powerful [CoinGecko API](https://www.coingecko.com/en/api) to provide accurate and up-to-date cryptocurrency data. This integration ensures that users have access to reliable market information and can make well-informed investment decisions.
-
-## Key Pages 🔍
 
 ### Crypto Page
 The [Crypto page](https://markonrt320.github.io/crypto/html/crypto.html) offers detailed information and tracking for various cryptocurrencies. Users can explore data on price movements, market capitalization, and trends for a wide range of digital assets. This page is essential for staying informed about the current state of the cryptocurrency market.

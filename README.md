@@ -21,6 +21,9 @@ Our platform leverages the powerful [CoinGecko API](https://www.coingecko.com/en
 ### Crypto Page
 The [Crypto page](https://markonrt320.github.io/crypto/html/crypto.html) offers detailed information and tracking for various cryptocurrencies. Users can explore data on price movements, market capitalization, and trends for a wide range of digital assets. This page is essential for staying informed about the current state of the cryptocurrency market.
 
+![image](https://github.com/user-attachments/assets/78914a73-629d-4a10-87ef-245723a7fa87)
+
+
 ### Convertor Page
 The [Convertor page](https://markonrt320.github.io/crypto/html/convertor.html) features a currency converter tool that allows users to convert between various cryptocurrencies and fiat currencies. This tool supports a wide range of digital currencies such as Bitcoin, Ethereum, and Tether, as well as traditional currencies like USD, EUR, and JPY. It is useful for quickly calculating conversions based on real-time exchange rates.
 
